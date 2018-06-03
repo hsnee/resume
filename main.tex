@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[margin=1in, scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -53,45 +53,55 @@
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
-\vspace*{-18mm}
+\vspace*{-20mm}
 \makecvtitle
-\vspace*{-10mm}
+\vspace*{-15mm}
+%\subsection{}
+%something
+
+
 \section{Education}
-\cventry{2016--2021}{PhD, Physics}{Carnegie Mellon University}{Pittsburgh, PA}{\textit{}}{}
+\cventry{Aug 2016--May 2021}{PhD, Physics}{Carnegie Mellon University}{Pittsburgh, PA}{\textit{}}{}
 \vspace*{-6mm}
-\cventry{2016--2018}{MS, Physics}{}{}{}{}
+\cventry{Aug 2016--May 2018}{MS, Physics}{}{}{}{}
 % arguments 3 to 6 can be left empty
-\cventry{2012--2016}{BSc (Hons), Physics \& Astrophysics}{University of Glasgow}{Glasgow, UK}{\textit{with Honours of the First Class}}{}
+\cventry{Sep 2012--Jun 2016}{BSc (Hons), Physics \& Astrophysics}{University of Glasgow}{Glasgow, UK}{\textit{with Honours of the First Class}}{}
 
 \section{Experience}
 %\subsection{Vocational}
-\cventry{Jan 2017--present}{Graduate Researcher}{Carnegie Mellon University}{Pittsburgh, PA}{}{%\newline{}%
+\cventry{Jan 2017--May 2021}{Graduate Researcher}{Carnegie Mellon University}{Pittsburgh, PA}{}{%\newline{}%
 As a member of the Dark Energy Science Collaboration for the Large Synoptic Survey Telescope, I:
 \begin{itemize}%
-\item currently use deep learning (generative adversarial neural networks) to model and correct for systematics and biases that the telescope induces in galaxy images
+\item currently use deep learning (generative adversarial neural networks) to model and correct for systematics and biases that the telescope induces in galaxy images.
 \item led efforts to design an optimal 10-year telescope strategy to minimize uncertainties related to weak gravitational lensing and measuring cosmological parameters.
 \item contributed to numerically-validated python library named the Core Cosmology Library.
 \end{itemize}}
 \vspace*{-6mm}
-\cventry{Aug 2016--Dec 2017}{Teaching Assistant}{}{}{}{Description line 1\newline{}Description line 2}
+\cventry{Aug 2016--Dec 2017}{Teaching Assistant}{}{}{}{Won best teaching assistant award, for leading recitations for intro and intermediate physics courses, designing computational physics labs, and integrating active-learning and tech-assisted teaching in physics courses. }
 %\subsection{Miscellaneous}
 \cventry{Aug 2015--Jun 2016}{Undergraduate Researcher}{University of Glasgow}{Glasgow, UK}{}{Worked on 2017 Nobel Prize-winning project, LIGO, using bayesian statistics to set upper limits on gravitational-wave signal from the sun, using 1.5 years of time-series data.}
-\cventry{May 2015--Aug 2015}{Undergraduate Researcher}{Durham University}{Durham, UK}{}{Description line 1\newline{}Description line 2}
+\cventry{May 2015--Aug 2015}{Undergraduate Researcher}{Durham University}{Durham, UK}{}{Wrote highly-parallelized python and C code to mitigate the bias on cosmological parameters induced due to inevitable constraints on placement of fibers in the largest spectroscopic instrument in the world, DESI.}
 
 \section{Skills}
 \subsection{Programming}
-\cvitemwithcomment{Python}{NumPy, SciPy, Pandas, Sci-kit Learn, Tensorflow, Keras}{Language of choice}
-\cvitemwithcomment{Javascript}{Processing.js, Node.js, D3.js}{}\textbf{Unix/Bash} \textbullet {} \textbf{Matlab} \textbullet {} \textbf{Mathematica} \textbullet {} \textbf{C/C++}
+\cvitemwithcomment{Python}{NumPy, SciPy, Pandas, Sci-kit Learn, Tensorflow, Keras}{with  3.5 years of experience }
+\cvitem{Javascript}{Processing.js, Node.js, D3.js {} {} {} \textbullet {} \textbf{Unix/Bash} \textbullet {} \textbf{Matlab} \textbullet {} \LaTeX \textbullet {} \textbf{C/C++}}
 \subsection{Communication}
 Excellent communication skills to technical and non-technical audiences with
 \begin{itemize}
 
-\item 2 peer-reviewed academic journal publications
+\item 2 peer-reviewed academic journal publications with 35 citations
 \item 6 talks at conferences, colloquia, and outreach events in US, UK, Germany \& S. Korea
 \item 4 poster presentations
 \item 2 years of weekly group presentations
 \end{itemize}
 
+\subsection{Leadership}
+\begin{itemize}
+    \item Founded and currently organize CMU/Pitt Hack Hour, a biweekly seminar series since 2017, where graduate students in the physical sciences peer-teach scientific programming.
+    \item STEM ambassador for the west of scotland (2015-2016), organizing STEM events at highschools.
+    \item Council member for UK Students for Exploration and Development of Space, 2015-2017.
+\end{itemize}
 %\section{Interests}
 %\cvitem{hobby 1}{Description}
 %\cvitem{hobby 2}{Description}
