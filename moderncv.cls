@@ -274,7 +274,7 @@
 % defines additional personal information (optional)
 % usage: \extrainfo{<text>}
 \newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
-
+\newcommand*{\extrainfoo}[1]{\def\@extrainfoo{#1}}
 % colors
 %-------
 \definecolor{color0}{rgb}{0,0,0}% main default color, normally left to black

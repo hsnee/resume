@@ -5,7 +5,7 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-
+\usepackage{hyperref}
 \documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
@@ -32,8 +32,8 @@
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{halmouba@andrew.cmu.edu}                               % optional, remove / comment the line if not wanted
 \homepage{www.husni.space}                         % optional, remove / comment the line if not wanted
-\extrainfo{\includegraphics[height=1.2\fontcharht\font`\B]{in.png} husnialmoubayyed}
-%\extrainfo{github: hsnee}
+\extrainfo{\includegraphics[height=1.2\fontcharht\font`\B]{in.png} \href{http://www.linkedin.com/in/husnialmoubayyed}{husnialmoubayyed}}
+\extrainfoo {\scalerel{\includegraphics[height=0.4cm]{github2.png}} \href{http://www.github.com/hsnee}{hsnee}}
 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
                               % optional, remove / comment the line if not wanted
@@ -61,31 +61,35 @@
 
 
 \section{Education}
-\cventry{Aug 2016--May 2021}{PhD, Physics}{Carnegie Mellon University}{Pittsburgh, PA}{\textit{}}{}
+\cventry{Aug 2016--May 2021}{PhD, Physics, Mellon College of Science}{Carnegie Mellon University}{Pittsburgh, PA}{\textit{}}{}
+
+%\vspace*{-6mm}
+%\cventry{Jan 2019--May 2021}{MS, Machine Learning, School of Computer Science}{}{}{}{}
+
 \vspace*{-6mm}
-\cventry{Aug 2016--May 2018}{MS, Physics}{}{}{}{}
+\cventry{Aug 2016--May 2018}{MS, Physics, Mellon College of Science}{}{}{}{}
 % arguments 3 to 6 can be left empty
-\cventry{Sep 2012--Jun 2016}{BSc (Hons), Physics \& Astrophysics}{University of Glasgow}{Glasgow, UK}{\textit{with Honours of the First Class}}{}
+\cventry{Sep 2012--Jun 2016}{BSc (Hons), Physics \& Astrophysics,}{University of Glasgow}{Glasgow, UK}{\textit{with Honours of the First Class}}{}
 
 \section{Experience}
 %\subsection{Vocational}
-\cventry{Jan 2017--May 2021}{Graduate Researcher}{Carnegie Mellon University}{Pittsburgh, PA}{}{%\newline{}%
+\cventry{Jan 2017--present}{Graduate Researcher}{Carnegie Mellon University}{Pittsburgh, PA}{}{%\newline{}%
 As a member of the Dark Energy Science Collaboration for the Large Synoptic Survey Telescope, I:
 \begin{itemize}%
 \item currently use deep learning (generative adversarial neural networks) to model and correct for systematics and biases that the telescope induces in galaxy images.
 \item led efforts to design an optimal 10-year telescope strategy to minimize uncertainties related to weak gravitational lensing and measuring cosmological parameters.
-\item contributed to numerically-validated python library named the Core Cosmology Library.
+\item Co-developed numerically-validated python library named the Core Cosmology Library.
 \end{itemize}}
 \vspace*{-6mm}
 \cventry{Aug 2016--Dec 2017}{Teaching Assistant}{}{}{}{Won best teaching assistant award, for leading recitations for intro and intermediate physics courses, designing computational physics labs, and integrating active-learning and tech-assisted teaching in physics courses. }
 %\subsection{Miscellaneous}
-\cventry{Aug 2015--Jun 2016}{Undergraduate Researcher}{University of Glasgow}{Glasgow, UK}{}{Worked on 2017 Nobel Prize-winning project, LIGO, using bayesian statistics to set upper limits on gravitational-wave signal from the sun, using 1.5 years of time-series data.}
-\cventry{May 2015--Aug 2015}{Undergraduate Researcher}{Durham University}{Durham, UK}{}{Wrote highly-parallelized python and C code to mitigate the bias on cosmological parameters induced due to inevitable constraints on placement of fibers in the largest spectroscopic instrument in the world, DESI.}
+\cventry{Aug 2015--Jun 2016}{Undergraduate Researcher}{University of Glasgow}{Glasgow, UK}{}{As part of 2017 Nobel Prize-winning project, LIGO, used bayesian statistics to set upper limits on gravitational-wave signal from the sun, using 1.5 years of time-series data.}
+\cventry{May 2015--Aug 2015}{Undergraduate Researcher}{Durham University}{Durham, UK}{}{Developed highly-parallelized python and C code to mitigate the bias on cosmological parameters induced due to inevitable constraints on placement of fibers in the largest spectroscopic instrument in the world, DESI.}
 
 \section{Skills}
 \subsection{Programming}
-\cvitemwithcomment{Python}{NumPy, SciPy, Pandas, Sci-kit Learn, Tensorflow, Keras}{with  3.5 years of experience }
-\cvitem{Javascript}{Processing.js, Node.js, D3.js {} {} {} \textbullet {} \textbf{Unix/Bash} \textbullet {} \textbf{Matlab} \textbullet {} \LaTeX \textbullet {} \textbf{C/C++}}
+\cvitemwithcomment{Python}{NumPy, SciPy, Pandas, Sklearn, Tensorflow, Keras, Jupyter, Seaborn}{--3.5 yrs of experience }
+\cvitem{Javascript}{Processing.js, Node.js, D3.js {} {} {} \textbullet {} \textbf{Unix/Bash} \textbullet {} \textbf{Matlab} \textbullet {} \LaTeX {} \textbullet {}  \textbf{C/C++}}
 \subsection{Communication}
 Excellent communication skills to technical and non-technical audiences with
 \begin{itemize}
@@ -98,50 +102,42 @@ Excellent communication skills to technical and non-technical audiences with
 
 \subsection{Leadership}
 \begin{itemize}
-    \item Founded and currently organize CMU/Pitt Hack Hour, a biweekly seminar series since 2017, where graduate students in the physical sciences peer-teach scientific programming.
-    \item STEM ambassador for the west of scotland (2015-2016), organizing STEM events at highschools.
-    \item Council member for UK Students for Exploration and Development of Space, 2015-2017.
+    \item Founded and currently organize CMU/Pitt Hack Hour, a biweekly seminar series since 2017, where graduate students in the physical sciences peer-teach advanced scientific programming.
+    \item Organized the inaugural physics hackathon at Carnegie Mellon in 2018.
 \end{itemize}
-%\section{Interests}
-%\cvitem{hobby 1}{Description}
-%\cvitem{hobby 2}{Description}
-%\cvitem{hobby 3}{Description}
 
-%\section{Extra 1}
-%\cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+\section{Relevant Coursework}
+\begin{cvcolumns}
+  \cvcolumn{Machine Learning \& Statistics}{Classes taken at the CMU School of
+  Computer Science at the PhD level:\begin{itemize}\item Introduction to Machine Learning \item Probability and Mathematical Statistics\end{itemize}}
+  \cvcolumn{Mathematical Finance}{Audited classes from MS in Computational Finance program:\begin{itemize}\item Fixed Income and\item MSCF Investments \end{itemize}}
 
-%\section{Extra 2}
-%\cvlistdoubleitem{Item 1}{Item 4}
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+\end{cvcolumns}
 
-%\section{References}
-%\begin{cvcolumns}
-  %\cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-  %\cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-  %\cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-%\end{cvcolumns}
 
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+\section{Side Projects}
+%\subsection{Vocational}
+\cventry{}{Build18, CMU's Electrical \& Computer Engineering Department, 2018}{miniLIGO}{}{}{%\vspace*{-5mm}
+\begin{itemize}%
+\item Built a physical model of 2017 Nobel prize winning experiment, LIGO, from scratch, using 3d printers, laser cutters, lasers, and beam splitters.
+\item Captured the model's signal using sensors and a Raspberry-Pi,  visualizing the calibrated signal in real-time.
+\end{itemize}}
 
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+%\subsection{Miscellaneous}
+\cventry{}{Hack-A-Startup 2018 Runner-up, Carnegie Mellon University, Tepper School of Business}{Optipik}{}{}{\begin{itemize} \item Built Convolutional Neural Network models for photo optimization targeted towards the housing industry \item Created comprehensive business plan using the SaaS model to turn Optipik into a startup\end{itemize}}
+\cventry{}{Grand Prize winner, Oath/Verizon Chatbot Hackathon}{ParrotBot}{}{}{Built a responsive chatbot incorporating machine learning methods including Natural Language Processing and Multi-Layer Perceptrons to make personalized recommendations, using the Oath/Verizon API}
+\cventry{}{}{Citadel LLC/Correlation One Datathon}{}{}{\vspace*{-5mm}
+In <7 hours, I used big datasets to create a Bayesian model to predict probability of cancer from DNA expressions}
+\section{Certificates}
+\cvitem{Bloomberg, LP}{Bloomberg Market Concepts}
+\cvitem{CFA Institute}{Investment Foundations Certificate}
 
-\clearpage
-%-----       letter       ---------------------------------------------------------
+\section{Interests}
+\cvitem{Retail Investing}{Including using options, futures, and short selling}
+\cvitem{Music}{I play piano and drums, and create electronic music, most recently using deep learning (LSTM)}
+
+%\clearpage
+%       letter  -------------------------------------------
 % recipient data
 %\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
 %\date{January 01, 1984}
@@ -152,16 +148,9 @@ Excellent communication skills to technical and non-technical audiences with
 
 %Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
 
-%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
-
-%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-
-%Albert Einstein discovered that $e=mc^2$ in 1905.
-
-%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
 
 %\makeletterclosing
-\lastpage
+%\lastpage
 %\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
 
